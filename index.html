@@ -4,52 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhakti Kate - Portfolio</title>
+    
+    <!-- Google Font for Abadi-like Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #A7D397; /* Pastel Green */
+            color: #333;
             text-align: center;
         }
+
         header {
-            background-color: #333;
+            background-color: #4E944F;
             color: white;
             padding: 20px;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 1px;
         }
+
         .container {
             max-width: 900px;
             margin: auto;
             padding: 20px;
             background: white;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
         }
+
         section {
             margin: 40px 0;
             padding: 20px;
-            border-bottom: 2px solid #ddd;
+            border-bottom: 2px solid #E3F4A4;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 1s ease-out forwards;
         }
+
         h2 {
-            color: #333;
+            color: #2C6E49;
+            font-size: 24px;
+            font-weight: 700;
         }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+        }
+
         .button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 20px;
             color: white;
-            background-color: #007BFF;
+            background-color: #4E944F;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
         }
+
         .button:hover {
-            background-color: #0056b3;
+            background-color: #2C6E49;
+            transform: scale(1.05);
         }
+
         footer {
             margin-top: 40px;
             padding: 10px;
-            background-color: #333;
+            background-color: #4E944F;
             color: white;
+            font-size: 14px;
         }
+
+        a {
+            text-decoration: none;
+            color: #4E944F;
+            font-weight: 600;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #2C6E49;
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
     </style>
 </head>
 <body>
@@ -106,3 +163,4 @@
 
 </body>
 </html>
+
