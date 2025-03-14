@@ -1,27 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Bhakti Kate - Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
             text-align: center;
-            margin: 50px;
         }
-        h1 {
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin: 40px 0;
+            padding: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        h2 {
             color: #333;
         }
-        p {
-            color: #666;
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm <strong>Your Name</strong> – a Product Manager & Business Analyst passionate about data-driven decisions and process optimization.</p>
-    <p>Explore my projects and experience below.</p>
+
+    <header>
+        Bhakti Kate - Portfolio
+    </header>
+
+    <div class="container">
+        
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm <strong>Bhakti Kate</strong>, a Product Manager & Business Analyst passionate about leveraging data-driven insights to optimize processes and drive impactful decisions. I specialize in product strategy, data analytics, and cross-functional collaboration.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Here are some of my recent projects:</p>
+            <ul>
+                <li><strong>Optimizing Retention Strategies</strong> – Used data analytics to identify key retention factors and improve customer engagement.</li>
+                <li><strong>Data-Driven Decision Making</strong> – Implemented SQL and Tableau for business intelligence reporting.</li>
+                <li><strong>Process Automation in Product Management</strong> – Developed automated workflows to enhance operational efficiency.</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills & Tools</h2>
+            <p>SQL, Tableau, Python, Excel, Data Visualization, Product Strategy, Business Analytics, Leadership, Process Optimization</p>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>Download my resume:</p>
+            <a href="resume.pdf" class="button" download>Download Resume</a>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: bhaktikate9@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/bhakti-kate" target="_blank">linkedin.com/in/bhakti-kate</a></p>
+            <p>GitHub: <a href="https://github.com/Bhakti-Kate" target="_blank">github.com/Bhakti-Kate</a></p>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2024 Bhakti Kate | All Rights Reserved
+    </footer>
+
 </body>
 </html>
