@@ -3,60 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhakti Kate - Portfolio</title>
+    <title>Bhakti Kate </title>
 
-    <!-- Google Fonts for Variety -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Great+Vibes&family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts for Professional Aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 
     <style>
-        /* Spring Color Palette */
+        /* Spring Theme Colors - Professional & Clean */
         :root {
             --soft-green: #A7D397;
-            --warm-yellow: #F8C471;
-            --soft-pink: #FADBD8;
-            --sky-blue: #AEDFF7;
-            --bold-green: #4E944F;
-            --deep-blue: #2C3E50;
+            --warm-beige: #F8E8A6;
+            --light-peach: #FDE3CF;
+            --calm-blue: #A8D8EA;
+            --deep-green: #466D1D;
+            --charcoal: #333;
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: var(--soft-pink);
+            background-color: var(--light-peach);
+            color: var(--charcoal);
             text-align: center;
         }
 
         header {
-            background-color: var(--deep-blue);
+            background-color: var(--deep-green);
             color: white;
             padding: 20px;
-            font-size: 30px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            font-family: 'Raleway', sans-serif;
-        }
-
-        /* Background SF Image */
-        .hero {
-            background: url('sf-background.jpg') no-repeat center center/cover;
-            height: 250px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
-            font-family: 'Great Vibes', cursive;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            font-size: 28px;
+            font-weight: 600;
+            font-family: 'Playfair Display', serif;
         }
 
         .container {
             max-width: 900px;
-            margin: auto;
-            padding: 20px;
+            margin: 40px auto;
+            padding: 30px;
             background: white;
-            border-radius: 15px;
+            border-radius: 12px;
             box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
         }
 
@@ -64,46 +50,58 @@
         .intro {
             padding: 40px;
             font-size: 22px;
-            color: var(--deep-blue);
-            font-family: 'Raleway', sans-serif;
+            color: var(--charcoal);
+            font-family: 'Inter', sans-serif;
             animation: fadeIn 1s ease-in-out;
         }
 
         .profile-pic {
-            width: 180px;
-            height: 180px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid var(--soft-green);
-            margin-bottom: 20px;
+            border: 4px solid var(--soft-green);
+            margin-bottom: 15px;
         }
 
         h1 {
             font-size: 36px;
-            font-weight: 700;
-            color: var(--bold-green);
-            font-family: 'Great Vibes', cursive;
+            font-weight: 600;
+            color: var(--deep-green);
+            font-family: 'Playfair Display', serif;
         }
 
         /* Sections */
         section {
-            padding: 30px;
+            padding: 40px;
             margin: 30px 0;
-            border-radius: 15px;
+            border-radius: 12px;
         }
 
         .journey {
-            background-color: var(--sky-blue);
-            color: var(--deep-blue);
+            background-color: var(--calm-blue);
+            color: var(--charcoal);
             font-size: 20px;
-            font-family: 'Raleway', sans-serif;
             animation: slideUp 1.2s ease-in-out;
+            text-align: left;
         }
 
         .projects {
-            background-color: var(--warm-yellow);
-            color: var(--deep-blue);
+            background-color: var(--warm-beige);
+            color: var(--charcoal);
             font-size: 20px;
+            text-align: left;
+        }
+
+        .journey h2, .projects h2 {
+            color: var(--deep-green);
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        .journey p, .projects p {
+            font-size: 18px;
+            line-height: 1.5;
         }
 
         /* Contact Buttons */
@@ -112,26 +110,25 @@
             padding: 12px 20px;
             margin: 10px;
             color: white;
-            background-color: var(--bold-green);
+            background-color: var(--deep-green);
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 6px;
             font-weight: 600;
             transition: 0.3s;
             font-size: 18px;
         }
 
         .button:hover {
-            background-color: var(--deep-blue);
+            background-color: var(--charcoal);
             transform: scale(1.05);
         }
 
         footer {
             margin-top: 40px;
             padding: 15px;
-            background-color: var(--deep-blue);
+            background-color: var(--deep-green);
             color: white;
             font-size: 16px;
-            font-family: 'Raleway', sans-serif;
         }
 
         /* Animations */
@@ -150,37 +147,32 @@
 <body>
 
     <header>
-        Bhakti Kate - Portfolio
+        Bhakti Kate - Product Manager
     </header>
-
-    <!-- San Francisco Themed Hero Section -->
-    <div class="hero">
-        Welcome to My World 🌸✨
-    </div>
 
     <div class="container">
         
         <!-- About Me Section -->
         <section class="intro">
             <img src="your-photo.jpg" class="profile-pic" alt="Bhakti Kate">
-            <h1>Hey, I'm Bhakti! Nice to meet you. 👋</h1>
-            <p>I'm a **Product Manager & Business Analyst** passionate about **data, strategy, and innovation**. My goal is to build products that make a difference.</p>
+            <h1>Hey, I'm Bhakti! 🌸</h1>
+            <p>**I build strategies, optimize experiences, and drive innovation.**<br> As a **Product Manager & Business Analyst**, I specialize in **data-driven decision-making, business strategy, and user experience.**</p>
         </section>
 
         <!-- Journey Section -->
         <section class="journey">
             <h2>My Journey 🚀</h2>
-            <p>💡 **Where It All Started** → A childhood love for **math & problem-solving**, leading to analytics & strategy.</p>
-            <p>📈 **Discovering My Passion** → My experience as a **Retention Coordinator & in Product Management** taught me how to solve real-world challenges.</p>
-            <p>🌎 **The Path Forward** → I’m on a mission to build **impactful solutions through product, strategy, and analytics**.</p>
+            <p>📊 **Numbers & Patterns:** My passion for **math & analytics** shaped my structured approach to problem-solving.</p>
+            <p>🔍 **Finding My Niche:** Working as a **Retention Coordinator** helped me understand user behavior and strategy.</p>
+            <p>🚀 **Building Impactful Products:** Now, I focus on **leveraging analytics to drive user-centered innovation**.</p>
         </section>
 
         <!-- Projects Section -->
         <section class="projects">
-            <h2>Projects 🔍</h2>
-            <p>✨ **Optimizing Retention Strategies** – Using data to improve engagement.</p>
-            <p>📊 **Data-Driven Decision Making** – SQL + Tableau insights.</p>
-            <p>🔄 **Process Automation** – Streamlining workflows.</p>
+            <h2>Featured Work 💡</h2>
+            <p>✨ **Optimizing Retention Strategies** – Using analytics to enhance customer engagement.</p>
+            <p>📊 **Data-Driven Decision Making** – SQL + Tableau for business intelligence insights.</p>
+            <p>🚀 **Process Automation** – Creating efficiency-driven workflows.</p>
         </section>
 
         <!-- Contact Section -->
