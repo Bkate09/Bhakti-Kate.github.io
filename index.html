@@ -42,12 +42,29 @@
             color: #2C3E50;
         }
 
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
         .profile-img {
             width: 200px;
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            margin-top: 20px;
+            margin-right: 30px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
         }
 
         .project-card {
@@ -56,7 +73,8 @@
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             transition: transform 0.3s;
-            margin-bottom: 20px;
+            flex: 1 1 calc(33.333% - 20px);
+            max-width: 300px;
         }
 
         .project-card:hover {
@@ -108,13 +126,15 @@
 
 <div class="container">
 
-    <!-- About Me -->
-    <section id="about" class="fade-in">
+    <!-- About Me Section -->
+    <section id="about" class="fade-in about-container">
         <img src="your-photo.jpg" alt="Bhakti Kate" class="profile-img">
-        <h1>Hey, I'm Bhakti!</h1>
-        <p>
-            I’m a Product Manager & Business Analyst who thrives on combining strategic insights, data-driven decisions, and empathy to build solutions that truly matter. My journey is about leveraging analytics, innovation, and empathy to lead products that make a difference.
-        </p>
+        <div class="about-text">
+            <h1>Hey, I'm Bhakti!</h1>
+            <p>
+                I’m a Product Manager & Business Analyst who thrives on combining strategic insights, data-driven decisions, and empathy to build solutions that truly matter. My journey is about leveraging analytics, innovation, and empathy to lead products that make a difference.
+            </p>
+        </div>
     </section>
 
     <!-- Animated Daily Journey -->
@@ -128,20 +148,21 @@
 
     <section id="projects" class="fade-in">
         <h2>Projects Showcase</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Optimizing Retention Strategies</h3>
+                <p>Enhanced customer engagement using data-driven insights.</p>
+            </div>
 
-        <div class="project-card">
-            <h3>Optimizing Retention Strategies</h3>
-            <p>Enhanced customer engagement using data-driven insights.</p>
-        </div>
+            <div class="project-card">
+                <h3>Business Intelligence Dashboards</h3>
+                <p>Delivered interactive dashboards with Tableau & SQL to inform key business decisions.</p>
+            </div>
 
-        <div class="project-card">
-            <h3>Business Intelligence Dashboards</h3>
-            <p>Delivered interactive dashboards with Tableau & SQL to inform key business decisions.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Process Automation in Product Management</h3>
-            <p>Automated workflows to increase operational efficiency by 80%.</p>
+            <div class="project-card">
+                <h3>Process Automation in Product Management</h3>
+                <p>Automated workflows to increase operational efficiency by 80%.</p>
+            </div>
         </div>
     </section>
 
