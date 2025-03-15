@@ -5,26 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhakti Kate - Portfolio</title>
 
-    <!-- Google Font for Warm & Friendly Look -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    
+    <!-- Google Fonts for Variety -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Great+Vibes&family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+
     <style>
+        /* Spring Color Palette */
+        :root {
+            --soft-green: #A7D397;
+            --warm-yellow: #F8C471;
+            --soft-pink: #FADBD8;
+            --sky-blue: #AEDFF7;
+            --bold-green: #4E944F;
+            --deep-blue: #2C3E50;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4faf4; /* Soft Warm Background */
-            color: #333;
+            background-color: var(--soft-pink);
             text-align: center;
         }
 
         header {
-            background-color: #4E944F;
+            background-color: var(--deep-blue);
             color: white;
             padding: 20px;
-            font-size: 28px;
+            font-size: 30px;
             font-weight: 700;
             letter-spacing: 1px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        /* Background SF Image */
+        .hero {
+            background: url('sf-background.jpg') no-repeat center center/cover;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'Great Vibes', cursive;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
         }
 
         .container {
@@ -32,14 +56,17 @@
             margin: auto;
             padding: 20px;
             background: white;
-            border-radius: 10px;
+            border-radius: 15px;
             box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
-            animation: fadeIn 1s ease-out;
         }
 
+        /* About Me */
         .intro {
             padding: 40px;
-            animation: slideUp 1s ease-in-out;
+            font-size: 22px;
+            color: var(--deep-blue);
+            font-family: 'Raleway', sans-serif;
+            animation: fadeIn 1s ease-in-out;
         }
 
         .profile-pic {
@@ -47,50 +74,64 @@
             height: 180px;
             border-radius: 50%;
             object-fit: cover;
-            box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+            border: 5px solid var(--soft-green);
             margin-bottom: 20px;
         }
 
         h1 {
             font-size: 36px;
             font-weight: 700;
-            color: #2C6E49;
+            color: var(--bold-green);
+            font-family: 'Great Vibes', cursive;
+        }
+
+        /* Sections */
+        section {
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 15px;
         }
 
         .journey {
-            margin-top: 50px;
-            padding: 20px;
-            background-color: #A7D397;
-            border-radius: 10px;
-            animation: fadeIn 1.5s ease-in-out;
+            background-color: var(--sky-blue);
+            color: var(--deep-blue);
+            font-size: 20px;
+            font-family: 'Raleway', sans-serif;
+            animation: slideUp 1.2s ease-in-out;
         }
 
-        .journey h2 {
-            color: white;
+        .projects {
+            background-color: var(--warm-yellow);
+            color: var(--deep-blue);
+            font-size: 20px;
         }
 
+        /* Contact Buttons */
         .button {
             display: inline-block;
             padding: 12px 20px;
+            margin: 10px;
             color: white;
-            background-color: #4E944F;
+            background-color: var(--bold-green);
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
             font-weight: 600;
-            transition: all 0.3s ease-in-out;
+            transition: 0.3s;
+            font-size: 18px;
         }
 
         .button:hover {
-            background-color: #2C6E49;
+            background-color: var(--deep-blue);
             transform: scale(1.05);
         }
 
         footer {
             margin-top: 40px;
-            padding: 10px;
-            background-color: #4E944F;
+            padding: 15px;
+            background-color: var(--deep-blue);
             color: white;
-            font-size: 14px;
+            font-size: 16px;
+            font-family: 'Raleway', sans-serif;
         }
 
         /* Animations */
@@ -112,9 +153,14 @@
         Bhakti Kate - Portfolio
     </header>
 
+    <!-- San Francisco Themed Hero Section -->
+    <div class="hero">
+        Welcome to My World 🌸✨
+    </div>
+
     <div class="container">
         
-        <!-- Welcome Section -->
+        <!-- About Me Section -->
         <section class="intro">
             <img src="your-photo.jpg" class="profile-pic" alt="Bhakti Kate">
             <h1>Hey, I'm Bhakti! Nice to meet you. 👋</h1>
@@ -123,25 +169,23 @@
 
         <!-- Journey Section -->
         <section class="journey">
-            <h2>My Journey</h2>
-            <p>💡 **Where It All Started** → Always loved **math & problem-solving**, which led me to analytics & strategy.</p>
-            <p>📈 **Discovering My Passion** → Working as a **Retention Coordinator & in Product** showed me how to solve real-world challenges.</p>
-            <p>🚀 **The Path Forward** → Building **impactful solutions through product, strategy, and analytics**.</p>
+            <h2>My Journey 🚀</h2>
+            <p>💡 **Where It All Started** → A childhood love for **math & problem-solving**, leading to analytics & strategy.</p>
+            <p>📈 **Discovering My Passion** → My experience as a **Retention Coordinator & in Product Management** taught me how to solve real-world challenges.</p>
+            <p>🌎 **The Path Forward** → I’m on a mission to build **impactful solutions through product, strategy, and analytics**.</p>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>✨ **Optimizing Retention Strategies** – Using data to improve engagement.</li>
-                <li>📊 **Data-Driven Decision Making** – SQL + Tableau insights.</li>
-                <li>🔄 **Process Automation** – Streamlining workflows.</li>
-            </ul>
+        <section class="projects">
+            <h2>Projects 🔍</h2>
+            <p>✨ **Optimizing Retention Strategies** – Using data to improve engagement.</p>
+            <p>📊 **Data-Driven Decision Making** – SQL + Tableau insights.</p>
+            <p>🔄 **Process Automation** – Streamlining workflows.</p>
         </section>
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Let’s Connect!</h2>
+            <h2>Let’s Connect! 🤝</h2>
             <a href="mailto:bhaktikate9@gmail.com" class="button">Email Me</a>
             <a href="https://www.linkedin.com/in/bhakti-kate" class="button">LinkedIn</a>
         </section>
