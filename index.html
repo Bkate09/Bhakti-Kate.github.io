@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhakti Kate - Portfolio</title>
-    
-    <!-- Google Font for Abadi-like Look -->
+
+    <!-- Google Font for Warm & Friendly Look -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     
     <style>
@@ -13,7 +13,7 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #A7D397; /* Pastel Green */
+            background-color: #f4faf4; /* Soft Warm Background */
             color: #333;
             text-align: center;
         }
@@ -34,30 +34,39 @@
             background: white;
             border-radius: 10px;
             box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeIn 1s ease-out forwards;
+            animation: fadeIn 1s ease-out;
         }
 
-        section {
-            margin: 40px 0;
-            padding: 20px;
-            border-bottom: 2px solid #E3F4A4;
-            opacity: 0;
-            transform: translateY(30px);
-            animation: slideUp 1s ease-out forwards;
+        .intro {
+            padding: 40px;
+            animation: slideUp 1s ease-in-out;
         }
 
-        h2 {
-            color: #2C6E49;
-            font-size: 24px;
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
             font-weight: 700;
+            color: #2C6E49;
         }
 
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #444;
+        .journey {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #A7D397;
+            border-radius: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .journey h2 {
+            color: white;
         }
 
         .button {
@@ -84,18 +93,6 @@
             font-size: 14px;
         }
 
-        a {
-            text-decoration: none;
-            color: #4E944F;
-            font-weight: 600;
-            transition: color 0.3s ease-in-out;
-        }
-
-        a:hover {
-            color: #2C6E49;
-            text-decoration: underline;
-        }
-
         /* Animations */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
@@ -103,7 +100,7 @@
         }
 
         @keyframes slideUp {
-            from { opacity: 0; transform: translateY(30px); }
+            from { opacity: 0; transform: translateY(40px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
@@ -117,48 +114,42 @@
 
     <div class="container">
         
-        <!-- About Me Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi, I'm <strong>Bhakti Kate</strong>, a Product Manager & Business Analyst passionate about leveraging data-driven insights to optimize processes and drive impactful decisions. I specialize in product strategy, data analytics, and cross-functional collaboration.</p>
+        <!-- Welcome Section -->
+        <section class="intro">
+            <img src="your-photo.jpg" class="profile-pic" alt="Bhakti Kate">
+            <h1>Hey, I'm Bhakti! Nice to meet you. 👋</h1>
+            <p>I'm a **Product Manager & Business Analyst** passionate about **data, strategy, and innovation**. My goal is to build products that make a difference.</p>
+        </section>
+
+        <!-- Journey Section -->
+        <section class="journey">
+            <h2>My Journey</h2>
+            <p>💡 **Where It All Started** → Always loved **math & problem-solving**, which led me to analytics & strategy.</p>
+            <p>📈 **Discovering My Passion** → Working as a **Retention Coordinator & in Product** showed me how to solve real-world challenges.</p>
+            <p>🚀 **The Path Forward** → Building **impactful solutions through product, strategy, and analytics**.</p>
         </section>
 
         <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
-            <p>Here are some of my recent projects:</p>
             <ul>
-                <li><strong>Optimizing Retention Strategies</strong> – Used data analytics to identify key retention factors and improve customer engagement.</li>
-                <li><strong>Data-Driven Decision Making</strong> – Implemented SQL and Tableau for business intelligence reporting.</li>
-                <li><strong>Process Automation in Product Management</strong> – Developed automated workflows to enhance operational efficiency.</li>
+                <li>✨ **Optimizing Retention Strategies** – Using data to improve engagement.</li>
+                <li>📊 **Data-Driven Decision Making** – SQL + Tableau insights.</li>
+                <li>🔄 **Process Automation** – Streamlining workflows.</li>
             </ul>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills & Tools</h2>
-            <p>SQL, Tableau, Python, Excel, Data Visualization, Product Strategy, Business Analytics, Leadership, Process Optimization</p>
-        </section>
-
-        <!-- Resume Section -->
-        <section id="resume">
-            <h2>Resume</h2>
-            <p>Download my resume:</p>
-            <a href="resume.pdf" class="button" download>Download Resume</a>
         </section>
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: bhaktikate9@gmail.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/bhakti-kate" target="_blank">linkedin.com/in/bhakti-kate</a></p>
-            <p>GitHub: <a href="https://github.com/Bhakti-Kate" target="_blank">github.com/Bhakti-Kate</a></p>
+            <h2>Let’s Connect!</h2>
+            <a href="mailto:bhaktikate9@gmail.com" class="button">Email Me</a>
+            <a href="https://www.linkedin.com/in/bhakti-kate" class="button">LinkedIn</a>
         </section>
 
     </div>
 
     <footer>
-        &copy; 2025 Bhakti Kate | All Rights Reserved
+        &copy; 2024 Bhakti Kate | All Rights Reserved
     </footer>
 
 </body>
