@@ -3,190 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhakti Kate </title>
-
-    <!-- Google Fonts for Professional Aesthetic -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-
+    <title>Bhakti Kate | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
     <style>
-        /* Spring Theme Colors - Professional & Clean */
-        :root {
-            --soft-green: #A7D397;
-            --warm-beige: #F8E8A6;
-            --light-peach: #FDE3CF;
-            --calm-blue: #A8D8EA;
-            --deep-green: #466D1D;
-            --charcoal: #333;
-        }
-
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #f0f9f4;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: var(--light-peach);
-            color: var(--charcoal);
-            text-align: center;
+            line-height: 1.6;
         }
-
         header {
-            background-color: var(--deep-green);
+            background-color: #4E944F;
             color: white;
-            padding: 20px;
-            font-size: 28px;
-            font-weight: 600;
-            font-family: 'Playfair Display', serif;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
         }
-
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 40px auto;
             padding: 30px;
-            background: white;
+            background: #ffffff;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
             border-radius: 12px;
-            box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
         }
-
-        /* About Me */
-        .intro {
-            padding: 40px;
-            font-size: 22px;
-            color: var(--charcoal);
-            font-family: 'Inter', sans-serif;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .profile-pic {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid var(--soft-green);
-            margin-bottom: 15px;
-        }
-
-        h1 {
-            font-size: 36px;
-            font-weight: 600;
-            color: var(--deep-green);
-            font-family: 'Playfair Display', serif;
-        }
-
-        /* Sections */
         section {
-            padding: 40px;
-            margin: 30px 0;
-            border-radius: 12px;
+            margin-bottom: 60px;
         }
-
-        .journey {
-            background-color: var(--calm-blue);
-            color: var(--charcoal);
-            font-size: 20px;
-            animation: slideUp 1.2s ease-in-out;
-            text-align: left;
-        }
-
-        .projects {
-            background-color: var(--warm-beige);
-            color: var(--charcoal);
-            font-size: 20px;
-            text-align: left;
-        }
-
-        .journey h2, .projects h2 {
-            color: var(--deep-green);
-            font-size: 26px;
-            font-weight: 600;
-        }
-
-        .journey p, .projects p {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-
-        /* Contact Buttons */
-        .button {
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #2C6E49;
+            border-bottom: 2px solid #A7D397;
             display: inline-block;
-            padding: 12px 20px;
-            margin: 10px;
-            color: white;
-            background-color: var(--deep-green);
+            padding-bottom: 5px;
+        }
+        .intro img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin-top: 20px;
+        }
+        p, li {
+            font-size: 1rem;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #4E944F;
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 5px;
             text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: 0.3s;
-            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-top: 15px;
         }
-
-        .button:hover {
-            background-color: var(--charcoal);
-            transform: scale(1.05);
+        .btn:hover {
+            background-color: #2C6E49;
         }
-
-        footer {
-            margin-top: 40px;
-            padding: 15px;
-            background-color: var(--deep-green);
-            color: white;
-            font-size: 16px;
+        .footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
         }
-
+        a {
+            color: #2C6E49;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         /* Animations */
+        .fade-in {
+            animation: fadeIn 1.2s ease-out;
+        }
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
+            from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(40px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
     </style>
 </head>
 <body>
 
-    <header>
-        Bhakti Kate - Product Manager
-    </header>
+    <header>Bhakti Kate | Product Manager & Analyst</header>
 
     <div class="container">
         
-        <!-- About Me Section -->
-        <section class="intro">
-            <img src="your-photo.jpg" class="profile-pic" alt="Bhakti Kate">
-            <h1>Hey, I'm Bhakti! 🌸</h1>
-            <p>**I build strategies, optimize experiences, and drive innovation.**<br> As a **Product Manager & Business Analyst**, I specialize in **data-driven decision-making, business strategy, and user experience.**</p>
+        <section id="intro" class="fade">
+            <h2>Welcome!</h2>
+            <p>Hi! I’m <strong>Bhakti Kate</strong>, a Product Manager & Business Analyst with a passion for driving innovation through data-driven strategies, process optimization, and impactful product experiences.</p>
+            <img src="your-photo.jpg" alt="Bhakti Kate">
         </section>
 
-        <!-- Journey Section -->
-        <section class="journey">
-            <h2>My Journey 🚀</h2>
-            <p>📊 **Numbers & Patterns:** My passion for **math & analytics** shaped my structured approach to problem-solving.</p>
-            <p>🔍 **Finding My Niche:** Working as a **Retention Coordinator** helped me understand user behavior and strategy.</p>
-            <p>🚀 **Building Impactful Products:** Now, I focus on **leveraging analytics to drive user-centered innovation**.</p>
+        <section id="journey" class="fade">
+            <h2>My Professional Journey</h2>
+            <p>My passion for <strong>analytics and structured thinking</strong> has guided me through roles like <strong>Retention Coordinator</strong> and <strong>Product Management Extern at PMI</strong>. Each role allowed me to hone skills in data-driven decision-making, strategic planning, and empathy-driven leadership.</p>
         </section>
 
-        <!-- Projects Section -->
-        <section class="projects">
-            <h2>Featured Work 💡</h2>
-            <p>✨ **Optimizing Retention Strategies** – Using analytics to enhance customer engagement.</p>
-            <p>📊 **Data-Driven Decision Making** – SQL + Tableau for business intelligence insights.</p>
-            <p>🚀 **Process Automation** – Creating efficiency-driven workflows.</p>
+        <section id="projects" class="fade">
+            <h2>Featured Projects</h2>
+            <ul>
+                <li><strong>Customer Retention Analytics</strong>: Leveraged SQL and Tableau to improve student engagement and retention rates by 20%.</li>
+                <li><strong>Product Automation</strong>: Reduced manual operations by 80% through workflow automation and efficient product management processes.</li>
+                <li><strong>Data-Driven Product Strategy</strong>: Conducted market and competitor analysis to inform successful go-to-market strategies.</li>
+            </ul>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Let’s Connect! 🤝</h2>
-            <a href="mailto:bhaktikate9@gmail.com" class="button">Email Me</a>
-            <a href="https://www.linkedin.com/in/bhakti-kate" class="button">LinkedIn</a>
+        <section id="skills" class="fade">
+            <h2>Skills & Expertise</h2>
+            <p><strong>Technical:</strong> SQL | Tableau | Python | Excel | Data Visualization</p>
+            <p><strong>Professional:</strong> Product Management | Analytics | Leadership | Strategic Planning | Cross-functional Collaboration</p>
+        </section>
+
+        <section id="contact" class="fade">
+            <h2>Let’s Connect</h2>
+            <p>Email: <a href="mailto:bhaktikate9@gmail.com">bhaktikate9@gmail.com</a></p>
+            <p><a href="https://www.linkedin.com/in/bhakti-kate" target="_blank">LinkedIn Profile</a> | <a href="https://github.com/Bhakti-Kate" target="_blank">GitHub Profile</a></p>
+            <a href="resume.pdf" class="btn" download>Download My Resume</a>
         </section>
 
     </div>
 
-    <footer>
-        &copy; 2024 Bhakti Kate | All Rights Reserved
-    </footer>
+    <div class="footer">
+        &copy; 2024 Bhakti Kate | San Francisco, CA
+    </div>
+
+    <script>
+        // Fade-in animations on scroll
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) entry.target.style.animation = "fadeIn 1s forwards";
+            });
+        });
+
+        document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+    </script>
 
 </body>
 </html>
