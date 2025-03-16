@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhakti Kate | Product Management & Business Analytics</title>
 
-    <!-- Professional Font: Inter from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Professional & Cursive Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -20,7 +20,7 @@
         }
 
         header {
-            padding: 20px;
+            padding: 10px;
             text-align: center;
             background-color: #2C3E50;
             color: white;
@@ -33,13 +33,13 @@
         }
 
         section {
-            padding: 40px;
+            padding: 30px;
             margin: 20px 0;
             border-bottom: 1px solid #eee;
         }
 
         h1, h2 {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Dancing Script', cursive;
             color: #2C3E50;
         }
 
@@ -50,8 +50,8 @@
         }
 
         .profile-img {
-            width: 180px;
-            height: 180px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
             object-fit: cover;
             margin-right: 30px;
@@ -59,13 +59,6 @@
 
         .about-text {
             flex: 1;
-        }
-
-        .animated-text {
-            font-size: 20px;
-            font-weight: 600;
-            color: #2C3E50;
-            animation: fadeInText 2s ease-in-out infinite alternate;
         }
 
         .projects-container {
@@ -90,14 +83,6 @@
             transform: scale(1.03);
         }
 
-        .project-thumbnail {
-            width: 100%;
-            max-height: 150px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-
         .button {
             display: inline-block;
             padding: 10px 20px;
@@ -108,9 +93,16 @@
             margin-top: 10px;
         }
 
+        .journey-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
         .journey-gif, .visuals {
             width: 100%;
-            max-width: 600px;
+            max-width: 400px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
@@ -126,11 +118,6 @@
         @keyframes fadeIn {
             from {opacity: 0; transform: translateY(30px);}
             to {opacity: 1; transform: translateY(0);}
-        }
-
-        @keyframes fadeInText {
-            from { opacity: 0.5; }
-            to { opacity: 1; }
         }
 
         .fade-in {
@@ -152,26 +139,49 @@
         <img src="your-photo.jpg" alt="Bhakti Kate" class="profile-img">
         <div class="about-text">
             <h1>Hey, I'm Bhakti!</h1>
-            <p class="animated-text">ENFJ | Libra | Calm, Fun & Easy to Work With! ✨</p>
             <p>
-                I’m a Product Manager & Business Analyst who thrives on combining strategic insights, data-driven decisions, and empathy to build solutions that truly matter. My journey is about leveraging analytics, innovation, and humor to lead products that make a difference.
+                I’m a Product Manager & Business Analyst who thrives on combining strategic insights, data-driven decisions, and empathy to build solutions that truly matter.
             </p>
         </div>
     </section>
 
-    <section id="journey" class="fade-in">
-        <h2>My Journey: From India to the USA</h2>
+    <section id="journey" class="fade-in journey-container">
+        <div>
+            <h2>My Daily Journey & Workflow</h2>
+            <p>
+                My day is a mix of analytics, team collaboration, and strategic thinking—focusing on understanding people, solving problems, and innovating solutions that make an impact.
+            </p>
+        </div>
         <img src="journey-animation.gif" alt="Daily Journey Animation" class="journey-gif">
-        <p>
-            I moved to the USA in 2023 from India, and my life is a mix of exciting projects and experiences. Currently, I juggle:
-        </p>
-        <ul>
-            <li>🎭 **A Fun Part-Time Job** - <a href="part-time-pics-link" class="button">See Fun Moments</a></li>
-            <li>🚀 **Product Manager at PMI** - <a href="pmi-projects-link" class="button">See My Work</a></li>
-            <li>🍷 **Business Analyst at Wachira Wines** - <a href="wachira-projects-link" class="button">See My Research</a></li>
-            <li>📚 **Full-Time Grad Student** - <a href="student-life-link" class="button">See My Journey</a></li>
-        </ul>
-        <img src="journey-visual.jpg" alt="Life in Motion" class="visuals">
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h2>Projects Showcase</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Optimizing Retention Strategies</h3>
+                <p>Enhanced customer engagement using data-driven insights.</p>
+                <a href="project1-presentation.pptx" class="button">View Presentation</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Business Intelligence Dashboards</h3>
+                <p>Delivered interactive dashboards with Tableau & SQL to inform key business decisions.</p>
+                <a href="project2-presentation.pptx" class="button">View Presentation</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Process Automation in Product Management</h3>
+                <p>Automated workflows to increase operational efficiency by 80%.</p>
+                <a href="project3-presentation.pptx" class="button">View Presentation</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="fade-in">
+        <h2>Let’s Connect!</h2>
+        <a href="mailto:bhaktikate9@gmail.com" class="button">Email Me</a>
+        <a href="https://linkedin.com/in/bhakti-kate" class="button">LinkedIn</a>
     </section>
 
 </div>
