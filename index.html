@@ -16,6 +16,7 @@
             background-color: #FAFAFA;
             color: #333;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         header {
@@ -49,8 +50,8 @@
         }
 
         .profile-img {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
             margin-right: 30px;
@@ -58,6 +59,13 @@
 
         .about-text {
             flex: 1;
+        }
+
+        .animated-text {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2C3E50;
+            animation: fadeInText 2s ease-in-out infinite alternate;
         }
 
         .projects-container {
@@ -75,10 +83,19 @@
             transition: transform 0.3s;
             flex: 1 1 calc(33.333% - 20px);
             max-width: 300px;
+            text-align: center;
         }
 
         .project-card:hover {
             transform: scale(1.03);
+        }
+
+        .project-thumbnail {
+            width: 100%;
+            max-height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
 
         .button {
@@ -91,7 +108,7 @@
             margin-top: 10px;
         }
 
-        .journey-gif {
+        .journey-gif, .visuals {
             width: 100%;
             max-width: 600px;
             border-radius: 10px;
@@ -111,6 +128,11 @@
             to {opacity: 1; transform: translateY(0);}
         }
 
+        @keyframes fadeInText {
+            from { opacity: 0.5; }
+            to { opacity: 1; }
+        }
+
         .fade-in {
             animation: fadeIn 1.2s ease-in-out;
         }
@@ -126,51 +148,30 @@
 
 <div class="container">
 
-    <!-- About Me Section -->
     <section id="about" class="fade-in about-container">
         <img src="your-photo.jpg" alt="Bhakti Kate" class="profile-img">
         <div class="about-text">
             <h1>Hey, I'm Bhakti!</h1>
+            <p class="animated-text">ENFJ | Libra | Calm, Fun & Easy to Work With! ✨</p>
             <p>
-                I’m a Product Manager & Business Analyst who thrives on combining strategic insights, data-driven decisions, and empathy to build solutions that truly matter. My journey is about leveraging analytics, innovation, and empathy to lead products that make a difference.
+                I’m a Product Manager & Business Analyst who thrives on combining strategic insights, data-driven decisions, and empathy to build solutions that truly matter. My journey is about leveraging analytics, innovation, and humor to lead products that make a difference.
             </p>
         </div>
     </section>
 
-    <!-- Animated Daily Journey -->
     <section id="journey" class="fade-in">
-        <h2>My Daily Journey & Workflow</h2>
+        <h2>My Journey: From India to the USA</h2>
         <img src="journey-animation.gif" alt="Daily Journey Animation" class="journey-gif">
         <p>
-            My day is a blend of analytics, team collaboration, and strategic thinking—focusing on understanding people, solving problems, and innovating solutions that make an impact.
+            I moved to the USA in 2023 from India, and my life is a mix of exciting projects and experiences. Currently, I juggle:
         </p>
-    </section>
-
-    <section id="projects" class="fade-in">
-        <h2>Projects Showcase</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <h3>Optimizing Retention Strategies</h3>
-                <p>Enhanced customer engagement using data-driven insights.</p>
-            </div>
-
-            <div class="project-card">
-                <h3>Business Intelligence Dashboards</h3>
-                <p>Delivered interactive dashboards with Tableau & SQL to inform key business decisions.</p>
-            </div>
-
-            <div class="project-card">
-                <h3>Process Automation in Product Management</h3>
-                <p>Automated workflows to increase operational efficiency by 80%.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="fade-in">
-        <h2>Let’s Connect!</h2>
-        <a href="mailto:bhaktikate9@gmail.com" class="button">Email Me</a>
-        <a href="https://linkedin.com/in/bhakti-kate" class="button">LinkedIn</a>
+        <ul>
+            <li>🎭 **A Fun Part-Time Job** - <a href="part-time-pics-link" class="button">See Fun Moments</a></li>
+            <li>🚀 **Product Manager at PMI** - <a href="pmi-projects-link" class="button">See My Work</a></li>
+            <li>🍷 **Business Analyst at Wachira Wines** - <a href="wachira-projects-link" class="button">See My Research</a></li>
+            <li>📚 **Full-Time Grad Student** - <a href="student-life-link" class="button">See My Journey</a></li>
+        </ul>
+        <img src="journey-visual.jpg" alt="Life in Motion" class="visuals">
     </section>
 
 </div>
