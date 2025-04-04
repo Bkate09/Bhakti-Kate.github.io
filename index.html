@@ -1,212 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Bhakti Kate - Aspiring Product Manager portfolio showcasing projects, skills, and experience"
+    />
+    <meta
+      name="keywords"
+      content="Bhakti Kate, Product Manager, Portfolio, SFSU, Business Analytics"
+    />
+    <meta name="author" content="Bhakti Kate" />
+    <meta
+      property="og:title"
+      content="Bhakti Kate | Aspiring Product Manager"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio showcasing my journey as an aspiring Product Manager"
+    />
+    <meta property="og:image" content="assets/images/your-photo.jpg" />
+    <meta
+      property="og:url"
+      content="https://bkate09.github.io/Bhakti-Kate.github.io/"
+    />
+
     <title>Bhakti Kate | Aspiring Product Manager</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Mulish:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Mulish', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #FAFAFA;
-            color: #333;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bhakti Kate</h1>
+      <h3>Aspiring Product Manager</h3>
+    </header>
 
-        /* Header */
-        header {
-            padding: 20px;
-            text-align: center;
-            background-color: #581845;
-            color: white;
-        }
-
-        header h1, h2, h3 {
-            font-family: 'Allura', cursive;
-            color: white;
-            margin: 0;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        /* Section Styling */
-        section {
-            padding: 30px;
-            margin: 20px 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        /* About Section */
-        .about-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .profile-img {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 30px;
-        }
-
-        .about-text {
-            flex: 1;
-        }
-
-        /* Styling for headings */
-        h1, h2 {
-            font-family: 'Allura', cursive;
-            color: #581845;
-            font-size: 36px;
-        }
-
-        /* View into My Daily Life */
-        .journey-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            text-align: left;
-        }
-
-        .journey-gif {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            align-self: center;
-        }
-
-        /* Projects Section */
-        .projects-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .project-card {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-            flex: 1 1 calc(33.333% - 20px);
-            max-width: 300px;
-            text-align: center;
-            border-left: 5px solid #581845;
-        }
-
-        .project-card:hover {
-            transform: scale(1.03);
-        }
-
-        /* Buttons */
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #581845;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-            font-weight: bold;
-        }
-
-        .button:hover {
-            background-color: #430d32;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #581845;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from {opacity: 0; transform: translateY(30px);}
-            to {opacity: 1; transform: translateY(0);}
-        }
-
-        .fade-in {
-            animation: fadeIn 1.2s ease-in-out;
-        }
-
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Bhakti Kate</h1>
-    <h3>Aspiring Product Manager</h3>
-</header>
-
-<div class="container">
-
-    <section id="about" class="fade-in about-container">
-        <img src="your-photo.jpg" alt="Bhakti Kate" class="profile-img">
+    <div class="container">
+      <section id="about" class="fade-in about-container">
+        <img
+          src="assets/images/your-photo.jpg"
+          alt="Bhakti Kate"
+          class="profile-img"
+        />
         <div class="about-text">
-            <h1>Hey 👋 I'm Bhakti, nice to meet you!</h1>
-            <p>
-                I am currently a student at SFSU studying Business Analytics. I love working on exciting projects, solving problems, and bringing ideas to life. Oh, and if you have time, let’s talk about fictional books! 📚
-            </p>
+          <h1>Hey 👋 I'm Bhakti, nice to meet you!</h1>
+          <p>
+            I am currently a student at SFSU studying Business Analytics. I love
+            working on exciting projects, solving problems, and bringing ideas
+            to life. Oh, and if you have time, let's talk about fictional books!
+            📚
+          </p>
         </div>
-    </section>
+      </section>
 
-    <section id="journey" class="fade-in journey-container">
+      <section id="journey" class="fade-in journey-container">
         <h2>View into My Daily Life</h2>
-        <img src="daily_life.jpg" alt="Daily Life" class="journey-gif">
-    </section>
+        <img
+          src="assets/images/daily_life.jpg"
+          alt="Daily Life"
+          class="journey-gif"
+        />
+      </section>
 
-    <section id="projects" class="fade-in">
+      <section id="projects" class="fade-in">
         <h2>Projects Showcase</h2>
-        <p><small>Just a small note: I enjoy PPT design, and all three are made by me! 😊</small></p>
+        <p>
+          <small
+            >Just a small note: I enjoy PPT design, and all three are made by
+            me! 😊</small
+          >
+        </p>
         <div class="projects-container">
-            <div class="project-card">
-                <h3>PMI App 2025</h3>
-                <p><small>Started as Developer (3 months) and now Product Manager & Team Leader (8 months).</small></p>
-                <a href="PMI_App_2025.pdf" class="button" target="_blank">View Presentation</a>
-            </div>
-            <div class="project-card">
-                <h3>Design Thinking</h3>
-                <p><small>Don't miss out on the website link on page 10!</small></p>
-                <a href="Design-Thinking.pdf" class="button" target="_blank">View Presentation</a>
-            </div>
-            <div class="project-card">
-                <h3>Business Competition</h3>
-                <p><small>Pitch deck for Sustainability Case Study.</small></p>
-                <a href="Business-Competition.pdf" class="button" target="_blank">View Presentation</a>
-            </div>
+          <div class="project-card">
+            <h3>PMI App 2025</h3>
+            <p>
+              <small
+                >Started as Developer (3 months) and now Product Manager & Team
+                Leader (8 months).</small
+              >
+            </p>
+            <a href="assets/PMI_App_2025.pdf" class="button" target="_blank"
+              >View Presentation</a
+            >
+          </div>
+          <div class="project-card">
+            <h3>Design Thinking</h3>
+            <p><small>Don't miss out on the website link on page 10!</small></p>
+            <a href="assets/Design-Thinking.pdf" class="button" target="_blank"
+              >View Presentation</a
+            >
+          </div>
+          <div class="project-card">
+            <h3>Business Competition</h3>
+            <p><small>Pitch deck for Sustainability Case Study.</small></p>
+            <a
+              href="assets/Business-Competition.pdf"
+              class="button"
+              target="_blank"
+              >View Presentation</a
+            >
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="fade-in">
-        <h2>Let’s Connect!</h2>
+      <section class="fade-in">
+        <h2>Let's Connect!</h2>
         <a href="mailto:bhaktikate92@gmail.com" class="button">Email Me</a>
-        <a href="https://www.linkedin.com/in/bhakti-kate" class="button">LinkedIn</a>
-    </section>
+        <a href="https://www.linkedin.com/in/bhakti-kate" class="button"
+          >LinkedIn</a
+        >
+      </section>
+    </div>
 
-</div>
-
-<footer>
-    &copy; 2025 Bhakti Kate | Aspiring Product Manager
-</footer>
-
-</body>
+    <footer>&copy; 2025 Bhakti Kate | Aspiring Product Manager</footer>
+  </body>
 </html>
-
